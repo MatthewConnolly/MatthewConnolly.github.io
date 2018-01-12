@@ -18,12 +18,12 @@ superconductor, superfluid, superconductivity, superfluidity, vortices,
 quantum hall effect, non-linear, solitons, quantum Hall effect, alkanes, 
 organic films, phase transitions, alkanes, hydrogen storage, H2 storage, 
 methane storage, CH4 storage">
+   <link rel="stylesheet" href="TabStyle.css">
    <title>Matthew Connolly's Home Page </title>
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" 
 alink="#FF0000" nosave> 
 &nbsp;
-
 
 <table WIDTH="750" NOSAVE UNITS="PIXELS" COLSPEC="C C C" >
 <tr NOSAVE width="600">
@@ -43,9 +43,18 @@ align=CENTER></td>
 </tr>
 </table>
 
-<center>
-<p><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960 align=CENTER></center>
+<button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Research', this, 'black')">Research</button>
+<button class="tablink" onclick="openPage('Publications', this, 'black')">Publications</button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+<center><p><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960px align=CENTER></center>
 
+<div id="Home" class="tabcontent">
+
+</div>
+
+<div id="Research" class="tabcontent">
 <p><img SRC="Images/Neutron.png" NOSAVE height=14 width=14><b><font size=+1>
 Research Interests:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>
 
@@ -57,8 +66,10 @@ I am also interested in other corrosive environments (e.g. radiation, CO<sub>2</
 (e.g. high entropy alloys).  For physical parameters which are difficult to determine experimentally (e.g. H<sub>2</sub> diffusion rates), I use <i>ab initio</i>, 
 Monte Carlo, and molecular dynamics simulations of the physical systems. I am currently involved in developing a neutron Transmission Bragg Edge Strain 
 Tensor Tomography (TBESTT) measurement technique, which will provide full 3D strain tensor fields in structural materials. I am interested in developing 
-novel experimental apparatus (e.g. pressure vessels, load frames, temperature control) for <i>in situ</i> strain measurements.
+novel experimental apparatus (e.g. pressure vessels, load frames, temperature control) for <i>in situ</i> strain measurements. <br>&nbsp;
+</div>
 
+<div id="Publications" class="tabcontent">
 <p><img SRC="Images/Neutron.png" NOSAVE height=14 width=14><b><font size=+1>
 Publications </b>
 
@@ -105,25 +116,9 @@ Publications </b>
 
 </ol>
 
+</div>
 
-
-<center>
-<p><br><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960 align=CENTER></center>
-
-<br>&nbsp;
-<p><img SRC="Images/Neutron.png" NOSAVE height=14 width=14><b><font size=+1>
-Background Information:</font></b>
-<p>I received my B.S. in physics from the <a href="http://www.uni.edu">University of Northern Iowa</a>.
-As an undergraduate I worked on two research projects. One, working with Dr. Michael Roth on 
-<i>``Molecular Dynamics Simulations of Hexane on Graphite at Various Coverages''</i> and another with
-Dr. Fred Behroozi which involved automating laser interferometry measurements of surface tension using LabView.
-<p>I received my Ph.D. in Physics in 2014 at the <a href="https://physics.missouri.edu">University
-of Missouri</a>, in Columbia, MO, working with <a href="http://faculty.missouri.edu/~wexlerc/"> Dr. Carlos Wexler
-</a>. My dissertation was on <i>``Sorbate Structure and Dynamics Effect on Sorption Properties: Theory and Experiment,''</i>&nbsp; where I used
-molecular dynamics, Monte Carlo, and neutron scattering to study hydrogen adsorption on carbon-based adsorbents.
-<center>
-<p><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960 align=CENTER></center>
-
+<div id="Contact" class="tabcontent">
 <table NOSAVE >
 <tr>
 <td><img SRC="Images/Neutron.png" NOSAVE height=14 width=14><b><font size=+1>
@@ -154,10 +149,46 @@ Contact Information:&nbsp;</font></b></td>
 </td>
 </tr>
 </table>
+</div>
 
+<div id="About" class="tabcontent">
+<p><img SRC="Images/Neutron.png" NOSAVE height=14 width=14><b><font size=+1>
+Background Information:</font></b>
+<p>I received my B.S. in physics from the <a href="http://www.uni.edu">University of Northern Iowa</a>.
+As an undergraduate I worked on two research projects. One, working with Dr. Michael Roth on 
+<i>``Molecular Dynamics Simulations of Hexane on Graphite at Various Coverages''</i> and another with
+Dr. Fred Behroozi which involved automating laser interferometry measurements of surface tension using LabView.
+<p>I received my Ph.D. in Physics in 2014 at the <a href="https://physics.missouri.edu">University
+of Missouri</a>, in Columbia, MO, working with <a href="http://faculty.missouri.edu/~wexlerc/"> Dr. Carlos Wexler
+</a>. My dissertation was on <i>``Sorbate Structure and Dynamics Effect on Sorption Properties: Theory and Experiment,''</i>&nbsp; where I used
+molecular dynamics, Monte Carlo, and neutron scattering to study hydrogen adsorption on carbon-based adsorbents.
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<center>
+<p><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960 align=CENTER></center>
 <address>
 <font size=-1>Matthew Connolly / <font color="#000000"><a href="mailto:matthew.connolly@nist.gov">matthew.connolly@nist.gov</a></font>
-/ Last modified: January 11, 2018</font></address>
+/ Last modified: January 11, 2018</font>
+</address>
 
 </body>
 </html>
