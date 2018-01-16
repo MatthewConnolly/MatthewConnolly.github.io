@@ -1,47 +1,45 @@
-<!-- <!DOCTYPE html> -->
-<!-- <html> -->
-<!-- <body style="background-color:powderblue;"> -->
-<!-- <img src="Charlie.jpg" alt="My buddy Charlie" style="width:500px;height:600px;"> -->
-<!-- <h1>Hello World</h1> -->
-<!-- <p>I'm hosted with GitHub Pages.</p> -->
-<!-- </body> -->
-<!-- </html> -->
-
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
    <meta name="Author" content="Matthew Connolly">
    <meta name="Description" content="">
-   <meta name="Keywords" content="physics, condensed matter theory, 
-superconductor, superfluid, superconductivity, superfluidity, vortices, 
-quantum hall effect, non-linear, solitons, quantum Hall effect, alkanes, 
-organic films, phase transitions, alkanes, hydrogen storage, H2 storage, 
-methane storage, CH4 storage">
+   <meta name="Keywords" content="physics, fatigue, fracture, hydrogen,
+   embrittlement, steels, pipelines, neutron, scattering, quasielastic,
+   diffraction, stress, strain, diffusion, hydrogen transport, hydrogen storage">
+   <link rel="shortcut icon" type="image/x-icon" href="Images/Neutron.png" />
    <link rel="stylesheet" href="TabStyle.css">
+   <link rel="stylesheet" href="BlogStyle.css">
    <title>Matthew Connolly's Home Page </title>
 </head>
+
+<script src="/lib/w3.js"></script>
+
 <body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" 
 alink="#FF0000" nosave> 
-&nbsp;
 
-<table WIDTH="750" NOSAVE UNITS="PIXELS" COLSPEC="C C C" >
+<!-- Banner Start -->
+<table WIDTH="1024" NOSAVE UNITS="PIXELS" COLSPEC="C C C C" >
 <tr NOSAVE width="600">
 <td><img SRC="Images/Mugshot.jpg" ALT="(mug shot)" NOSAVE BORDER=0 height=188 width=188 
 align=CENTER></td>
 
 <td WIDTH="60"></td>
 
-<td VALIGN=TOP WIDTH="850" NOSAVE><b><font size=+2>Matthew Connolly</font></b>
-<br><b>Physicist</b>&nbsp;
-<br><b>- Fatigue and Fracture Group</b>&nbsp;
-<br><b>- Applied Chemicals and Materials Divisioin</b>&nbsp;
-<br><b>- Materials Measurement Laboratory</b>&nbsp;
-<br><b>- National Institute of Standards and Technology</b>&nbsp;
-<br><b><a href="https://www.nist.gov/mml/acmd/fatigue-and-fracture-group">Fatigue and Fracture Group</a>,</b> 
-<br><b><b><a href="https://www.nist.gov">National Institute of Standards and Technology</a></b></td>
+<td VALIGN=TOP WIDTH="850" NOSAVE>
+<center>
+<b><font size=+2>Matthew Connolly</font>
+</b>
+<br><b><font size=+1>Physicist</font></b>&nbsp;
+<br><br><b><a href="https://www.nist.gov/mml/acmd/fatigue-and-fracture-group">Fatigue and Fracture Group</a></b> &nbsp;
+<br><b><a href="https://www.nist.gov/mml/acmd">Applied Chemicals and Materials Division</a></b> &nbsp;
+<br><b><a href="https://www.nist.gov/mml">Material Measurement Laboratory</a></b> &nbsp;
+<br><b><b><a href="https://www.nist.gov">National Institute of Standards and Technology</a></b>
+
+</center>
 </tr>
 </table>
+<!-- Banner End -->
 
 <button class="tablink" onclick="openPage('Home', this, 'black')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('Research', this, 'black')">Research</button>
@@ -51,7 +49,41 @@ align=CENTER></td>
 <center><p><img SRC="Images/BlueBox.png" NOSAVE height=10 width=960px align=CENTER></center>
 
 <div id="Home" class="tabcontent">
+	<div id="container">
+		<div id="main">
+			<div id="content">
+				<div class="post">
+					<h2><a href="#">Hydrogen Embrittlement and Neutron Scattering</a></h2>
+		
+					<a href="#" class="post-thumbnail"><img src="images/temp-post-thumbnail1.png" alt="Read the full post" /></a>
+		
+					<p>
+					
+					</p>
+		
+					<div class="post-info">
+						<ul>
+							<li class="date">2018 January 15</li>
+							<li class="read-more"><a href="#">Read more</a></li>
+						</ul>
+					</div>
+				</div>
 
+				<div class="pagination">
+					<p class="prev"><a href="#">Older articles</a></p>
+					<p class="next"><a href="#">Newer articles</a></p>
+				</div>
+				
+			</div>	
+			
+			<div id="side">
+				<ul id="pages">
+					<li><a href="#">Archives</a></li>	
+				</ul>
+		
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="Research" class="tabcontent">
@@ -158,6 +190,7 @@ Background Information:</font></b>
 As an undergraduate I worked on two research projects. One, working with Dr. Michael Roth on 
 <i>``Molecular Dynamics Simulations of Hexane on Graphite at Various Coverages''</i> and another with
 Dr. Fred Behroozi which involved automating laser interferometry measurements of surface tension using LabView.
+<br><br>
 <p>I received my Ph.D. in Physics in 2014 at the <a href="https://physics.missouri.edu">University
 of Missouri</a>, in Columbia, MO, working with <a href="http://faculty.missouri.edu/~wexlerc/"> Dr. Carlos Wexler
 </a>. My dissertation was on <i>``Sorbate Structure and Dynamics Effect on Sorption Properties: Theory and Experiment,''</i>&nbsp; where I used
@@ -181,6 +214,10 @@ function openPage(pageName,elmnt,color) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+w3.includeHTML();
 </script>
 
 <center>
