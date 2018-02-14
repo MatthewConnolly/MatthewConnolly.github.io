@@ -107,6 +107,11 @@ a {
 			padding: 1px; border: 1px solid #eaeaea;
 		}
 		
+#main #content .post {
+	background-color: WhiteSmoke
+	
+}
+
 #main #content .post-info {
 	padding: 1px; border: 1px solid #e9e9e9; margin: 0 0 60px 0;
 }
